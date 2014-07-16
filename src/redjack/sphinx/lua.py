@@ -530,6 +530,7 @@ class LuaDomain(Domain):
         'data':            LuaModulelevel,
         'class':           LuaClasslike,
         'method':          LuaClassmember,
+        'attribute':          LuaClassmember,
         'module':          LuaModule,
         'currentmodule':   LuaCurrentModule,
     }
