@@ -35,7 +35,7 @@ lua_sig_re = re.compile(
 from sphinx.writers.html import HTMLTranslator
 
 # Damn monkey patching.
-
+'''
 def new_visit_desc_parameterlist(self, node):
     if hasattr(node, 'param_class'):
         param_class = ' class="param_start_%s"' % node.param_class
@@ -66,7 +66,7 @@ def new_depart_desc_parameterlist(self, node):
 
 HTMLTranslator.visit_desc_parameterlist = new_visit_desc_parameterlist
 HTMLTranslator.depart_desc_parameterlist = new_depart_desc_parameterlist
-
+'''
 def lua_desc_parameterlist(argstart, argend):
     node = addnodes.desc_parameterlist()
     node.param_start = argstart
